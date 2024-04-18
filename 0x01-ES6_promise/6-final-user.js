@@ -10,7 +10,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       status: response.status,
       value:
         response.status === 'rejected'
-          ? String(response.reason.message)
+          ? String(response.reason)
           : response.value,
     }))
   );
